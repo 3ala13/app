@@ -1,12 +1,10 @@
 workflows:
   android-release:
-    name: Build Android APK
+    name: Build Android APK (Debug - No Keystore)
     max_build_duration: 15
     environment:
       vars:
         PACKAGE_NAME: "com.example.clinicreminder"
-      android_signing:
-        - android_keystore
       xcode: latest
     scripts:
       - name: Set up environment
