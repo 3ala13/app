@@ -7,7 +7,6 @@ workflows:
         PACKAGE_NAME: "com.example.clinicreminder"
       android_signing:
         - android_keystore
-      flutter: false
       xcode: latest
     scripts:
       - name: Set up environment
